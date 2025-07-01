@@ -119,4 +119,7 @@ history2 = model2.fit(X_train, y_train, validation_data=(X_test, y_test), epochs
 y_pred2 = model2.predict(X_test)
 y_pred_labels2 = np.argmax(y_pred2, axis=1)
 y_true_labels2 = np.argmax(y_test, axis=1)
-
+# Kindly add these two lines at the end of maize.py to save the model and label encoder for API predictions
+model2.save("maize_model2.h5")
+import joblib
+joblib.dump(le, "label_encoder.pkl")

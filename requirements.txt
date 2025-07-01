@@ -7,3 +7,10 @@ opencv-python-headless
 pillow
 scikit-learn
 tensorflow
+
+fastapi
+uvicorn
+tensorflow
+pillow
+joblib
+numpy
